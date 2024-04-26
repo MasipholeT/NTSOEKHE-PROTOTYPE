@@ -1,0 +1,50 @@
+Ntsoekhe Hospital Distributed Database Management System (PROTOTYPE)
+
+This project implements a Distributed Database Management System for Ntsoekhe Hospital using Flask and Cassandra. The system allows basic CRUD (Create, Read, Update, Delete) operations for managing patient records across distributed nodes.
+
+Features
+
+- Distributed Nodes: Utilizes Cassandra to support operations across multiple nodes.
+  
+- Data Consistency and Replication: Implements data consistency and replication mechanisms in Cassandra.
+
+- Secure Access Controls: Includes secure access controls and encryption to protect health data.
+
+- User-Friendly Interface: Provides a web interface powered by Flask for database interactions.
+
+Installation and Setup
+
+1. Clone the Repository:
+   
+   git clone https:https://github.com/MasipholeT/NTSOEKHE-PROTOTYPE.git
+   cd Ntsoekhe
+   
+
+2. Install Dependencies:
+   
+   pip install -r requirements.txt
+   
+
+3. Start Cassandra Cluster:
+   - Ensure Docker is running.
+   - Start Cassandra nodes using Docker Compose:
+     
+     docker-compose up -d
+     
+
+4. Run the Flask Application:
+   
+   python app.py
+
+5. Access the Application:
+   Open a web browser and go to `http://localhost:5000/` to interact with the system.
+
+Encountered Problems
+
+During development, we encountered the following issues:
+
+- Connecting Cassandra Nodes:
+  We faced challenges setting up and connecting the Cassandra nodes using Docker. 
+
+- Flask Integration:
+  Integrating Flask with Cassandra required resolving compatibility and setup issues. 

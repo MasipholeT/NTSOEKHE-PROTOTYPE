@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add New Patient</title>
+</head>
+<body>
+    <h1>Add New Patient</h1>
+    <form method="post" action="{{ url_for('add_patient') }}">
+        Patient ID: <input type="text" name="patient_id"><br>
+        Name: <input type="text" name="name"><br>
+        Age: <input type="text" name="age"><br>
+        Gender: <input type="text" name="gender"><br>
+        <input type="submit" value="Add Patient">
+    </form>
+</body>
+</html>

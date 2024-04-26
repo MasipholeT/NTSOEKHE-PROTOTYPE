@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patients List</title>
+</head>
+<body>
+    <h1>Patients List</h1>
+    <ul>
+        {% for patient in patients %}
+        <li>{{ patient.name }} - {{ patient.age }} years old (Gender: {{ patient.gender }}) 
+            <a href="{{ url_for('update_patient', patient_id=patient.patient_id) }}">Edit</a>
+            <a href="{{ url_for('delete_patient', patient_id=patient.patient_id) }}">Delete</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('add_patient') }}">Add New Patient</a>
+</body>
+</html>
