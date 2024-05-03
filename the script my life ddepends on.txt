@@ -1,0 +1,1 @@
+docker run --name leru -d -e CASSANDRA_BROADCAST_ADDRESS=197.220.153.27 -e CASSANDRA_SEEDS= 197.220.152.92  -p 9042:9042 -p 7000:7000 cassandra:latest

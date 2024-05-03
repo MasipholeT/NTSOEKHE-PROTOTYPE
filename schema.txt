@@ -1,0 +1,33 @@
+CREATE TABLE ntsoekhe.appointment (
+    appointment int PRIMARY KEY,
+    date text,
+    done text,
+    hospital text,
+    name text,
+    note text,
+    number text,
+    symptoms text,
+    time text
+) ;
+
+
+CREATE TABLE ntsoekhe.userid (
+    user_id int PRIMARY KEY,
+    name text,
+    passwords text,
+    phone_number int,
+    role text
+) ;
+
+CREATE TABLE ntsoekhe.worker (
+    user_id int PRIMARY KEY,
+    hospital text,
+    name text,
+    passwords text,
+    phone_number int
+);
+
+
+
+INSERT INTO ntsoekhe.worker (user_id, hospital, name, passwords, phone_number) VALUES  (3, 'Seboche', 'Jane Smith', 'se', 98);
+INSERT INTO ntsoekhe.worker (user_id, hospital, name, passwords, phone_number) VALUES (4, 'St Josephs', 'John Doe', '23', 123);
